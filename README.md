@@ -1,0 +1,1 @@
+# applyinnovations-eslint-config
