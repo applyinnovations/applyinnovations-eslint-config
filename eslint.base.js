@@ -152,6 +152,17 @@ module.exports = {
           },
         ],
         "@typescript-eslint/no-use-before-define": "off",
+        "no-restricted-syntax": [
+          "error",
+          {
+            message: "No empty string defaults",
+            selector: 'LogicalExpression[operator=||][right.value=""]',
+          },
+          {
+            message: "No empty string defaults",
+            selector: 'LogicalExpression[operator=??][right.value=""]',
+          },
+        ],
       },
     },
   ],
